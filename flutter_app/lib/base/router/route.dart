@@ -8,6 +8,7 @@ import 'package:flutter_app/base/router/route.internal.dart';
 //每次新增都要允许指令
 // flutter packages pub run build_runner clean
 // flutter packages pub run build_runner build --delete-conflicting-outputs
+//或者执行目录下bash.sh
 
 @ARouteRoot()
 class MyRouteOption {

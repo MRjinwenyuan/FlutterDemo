@@ -7,6 +7,8 @@
 import 'dart:convert';
 import 'package:annotation_route/route.dart';
 import 'package:flutter_app/sub/animateSwiitcherDemo.dart';
+import 'package:flutter_app/sub/videoPage.dart';
+import 'package:flutter_app/sub/audioPage.dart';
 import 'package:flutter_app/sub/pushPage.dart';
 
 class ARouterInternalImpl extends ARouterInternal {
@@ -15,6 +17,12 @@ class ARouterInternalImpl extends ARouterInternal {
       <String, List<Map<String, dynamic>>>{
     'page://AnimatedPage': [
       {'clazz': AnimatedPage}
+    ],
+    'page://VideoPage': [
+      {'clazz': VideoPage}
+    ],
+    'page://AudioPage': [
+      {'clazz': AudioPage}
     ],
     'page://PushPage': [
       {'clazz': PushPage}
@@ -44,6 +52,10 @@ class ARouterInternalImpl extends ARouterInternal {
     switch (clazz) {
       case AnimatedPage:
         return new AnimatedPage(option);
+      case VideoPage:
+        return new VideoPage(option);
+      case AudioPage:
+        return new AudioPage(option);
       case PushPage:
         return new PushPage(option);
       default:
