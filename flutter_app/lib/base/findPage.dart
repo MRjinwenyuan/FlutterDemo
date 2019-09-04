@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter_app/base/router/route.dart';
 import 'package:flutter_app/tools/jcolor.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
@@ -5,7 +7,7 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-@immutable
+// ignore: must_be_immutable
 class FindPage extends StatelessWidget {
 
   //要跳转的page
@@ -65,3 +67,4 @@ class FindPage extends StatelessWidget {
     );
   }
 }
+
