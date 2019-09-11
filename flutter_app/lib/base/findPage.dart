@@ -32,6 +32,7 @@ class FindPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(title: const Text('发现')),
@@ -40,13 +41,11 @@ class FindPage extends StatelessWidget {
         itemCount: ary.length,
         itemBuilder: (BuildContext context, int index) => new GestureDetector(
           onTap: (){
-
-            Navigator.of(context).push(MaterialPageRoute(
-              builder: (BuildContext context){
-                return AppRoute.getPage(ary[index]["page"], {});
-              }
-            ));
-
+//            Navigator.of(context).push(MaterialPageRoute(
+//              builder: (BuildContext context){
+//                return AppRoute.getPage(ary[index]["page"], {});
+//              }
+//            ));
           },
           child: new Container(
             color: randomColor(),
